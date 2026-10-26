@@ -17,9 +17,7 @@ Program terdiri dari tiga file utama:
 
 File JavaScript dihubungkan menggunakan atribut `defer` agar dijalankan setelah HTML selesai diproses.
 
-**[LETAK SCREENSHOT 1 — STRUKTUR FILE]**
-
-Masukkan screenshot folder project yang memperlihatkan file `index.html`, `style.css`, dan `script.js`.
+<img width="240" height="340" alt="Screenshot 2026-10-26 152518" src="https://github.com/user-attachments/assets/d0fc13dc-5343-4b70-adc5-973a9a11232d" />
 
 ## D. Penjelasan Program
 
@@ -42,9 +40,8 @@ tombol.addEventListener("click", function () {
 });
 ```
 
-**[LETAK SCREENSHOT 2 — MANIPULASI DOM]**
+<img width="705" height="283" alt="Screenshot 2026-10-26 153234" src="https://github.com/user-attachments/assets/09732ebe-6e1d-45ec-b553-236cd7a75f69" />
 
-Masukkan screenshot halaman browser yang memperlihatkan judul berubah dan pesan waktu setelah tombol **Klik Saya** ditekan.
 
 ### 2. Mengubah Class dan Gaya CSS
 
@@ -77,9 +74,10 @@ tombolGaya.addEventListener("click", function () {
 }
 ```
 
-**[LETAK SCREENSHOT 3 — PERUBAHAN GAYA CSS]**
+<img width="712" height="265" alt="Screenshot 2026-10-26 153402" src="https://github.com/user-attachments/assets/69690480-93e8-4015-b5d2-db05453a7cec" />
+<img width="817" height="295" alt="Screenshot 2026-10-26 153408" src="https://github.com/user-attachments/assets/a4c172de-9a48-46cc-be4f-a3295273802a" />
 
-Masukkan screenshot sebelum dan sesudah tombol **Ubah Gaya** ditekan.
+
 
 ### 3. Penghitung Karakter
 
@@ -96,9 +94,9 @@ namaInput.addEventListener("input", function () {
 });
 ```
 
-**[LETAK SCREENSHOT 4 — PENGHITUNG KARAKTER]**
+<img width="403" height="87" alt="Screenshot 2026-10-26 153456" src="https://github.com/user-attachments/assets/2c08a3f4-52fa-42df-b16c-0d51244ceaee" />
 
-Masukkan screenshot ketika kolom nama sudah diisi dan jumlah karakter terlihat berubah.
+
 
 ### 4. Validasi Form Pendaftaran
 
@@ -136,13 +134,11 @@ form.addEventListener("submit", function (event) {
 });
 ```
 
-**[LETAK SCREENSHOT 5 — VALIDASI GAGAL]**
+<img width="832" height="67" alt="Screenshot 2026-10-26 153534" src="https://github.com/user-attachments/assets/ea39479d-8392-4d79-a8bb-c0e259171a5f" />
 
-Masukkan screenshot ketika form dikirim dengan data yang salah, misalnya nama kurang dari tiga karakter atau email tidak valid.
 
-**[LETAK SCREENSHOT 6 — VALIDASI BERHASIL]**
+<img width="820" height="75" alt="Screenshot 2026-10-26 153625" src="https://github.com/user-attachments/assets/d1d4ff2d-3c40-4e9c-b4f3-6e1ea5dfbe19" />
 
-Masukkan screenshot ketika seluruh data sudah benar dan pesan validasi berhasil muncul.
 
 ### 5. To-do List
 
@@ -175,17 +171,11 @@ li {
 }
 ```
 
-**[LETAK SCREENSHOT 7 — MENAMBAHKAN TUGAS]**
+<img width="472" height="125" alt="Screenshot 2026-10-26 153722" src="https://github.com/user-attachments/assets/df492b30-df91-4804-ab4a-8ef36d4a7d22" />
 
-Masukkan screenshot ketika tugas berhasil ditambahkan ke daftar.
+<img width="576" height="186" alt="Screenshot 2026-10-26 153758" src="https://github.com/user-attachments/assets/a9bc695a-be3e-4b3e-8a5d-74c8cab5b649" />
 
-**[LETAK SCREENSHOT 8 — MENANDAI TUGAS SELESAI]**
-
-Masukkan screenshot ketika tugas sudah dicoret setelah tombol **Tandai selesai** ditekan.
-
-**[LETAK SCREENSHOT 9 — MENGHAPUS TUGAS]**
-
-Masukkan screenshot setelah salah satu tugas dihapus dari daftar.
+<img width="461" height="142" alt="Screenshot 2026-10-26 153825" src="https://github.com/user-attachments/assets/c5d14d42-a001-4877-bd6f-4f6e8f7bcbf9" />
 
 ### 6. Event Change pada Dropdown Sesi Workshop
 
@@ -206,9 +196,8 @@ sesi.addEventListener("change", function () {
 });
 ```
 
-**[LETAK SCREENSHOT 10 — PILIHAN SESI WORKSHOP]**
+<img width="365" height="137" alt="Screenshot 2026-10-26 153908" src="https://github.com/user-attachments/assets/4b3a085f-cb7c-4887-a344-14fe2b93064e" />
 
-Masukkan screenshot setelah memilih salah satu sesi, misalnya JavaScript, dan teks pilihan tampil di halaman.
 
 ### 7. Menyembunyikan dan Menampilkan Paragraf
 
@@ -239,33 +228,11 @@ tombolTampil.addEventListener("click", function () {
 }
 ```
 
-**[LETAK SCREENSHOT 11 — PARAGRAF DISEMBUNYIKAN]**
+<img width="565" height="96" alt="Screenshot 2026-10-26 153953" src="https://github.com/user-attachments/assets/49d5b628-fc29-4453-8706-b99e793aa8f4" />
 
-Masukkan screenshot ketika paragraf tidak terlihat dan tombol berubah menjadi **Tampilkan**.
+<img width="612" height="133" alt="Screenshot 2026-10-26 154022" src="https://github.com/user-attachments/assets/37f4a286-a67a-4db4-bcfc-167ff6c98c03" />
 
-**[LETAK SCREENSHOT 12 — PARAGRAF DITAMPILKAN KEMBALI]**
 
-Masukkan screenshot setelah tombol ditekan kembali dan paragraf muncul.
-
-## E. Eksperimen Mandiri Nomor 5: Script Tanpa Defer
-
-Pada program utama, file JavaScript dihubungkan menggunakan:
-
-```html
-<script src="script.js" defer></script>
-```
-
-Jika atribut `defer` dihapus dan script ditempatkan di bagian `head`, browser dapat menjalankan JavaScript sebelum elemen HTML selesai diproses. Akibatnya, `document.getElementById()` dapat menghasilkan `null` sehingga pemasangan event listener mengalami error.
-
-Pengujian dilakukan dengan memindahkan script ke bagian `head` tanpa `defer`, kemudian mengamati hasilnya melalui browser dan Console pada Developer Tools.
-
-**[LETAK SCREENSHOT 13 — ERROR TANPA DEFER]**
-
-Masukkan screenshot Console browser yang memperlihatkan error ketika script dijalankan sebelum elemen HTML tersedia, jika error tersebut muncul saat pengujian.
-
-**[LETAK SCREENSHOT 14 — SCRIPT MENGGUNAKAN DEFER]**
-
-Masukkan screenshot halaman yang kembali berfungsi setelah atribut `defer` digunakan.
 
 ## F. Kesimpulan
 

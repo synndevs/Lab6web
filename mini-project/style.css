@@ -1,0 +1,166 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.form-card {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+    margin-bottom: 28px;
+}
+
+.label {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.header p:last-child {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #ffffff;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+small {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.error {
+    color: #dc2626;
+}
+
+.btn-submit,
+.btn-reset {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.btn-submit:hover {
+    background: #1d4ed8;
+}
+
+.btn-reset {
+    margin-top: 10px;
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.btn-reset:hover {
+    background: #cbd5e1;
+}
+
+#pesan {
+    margin-top: 16px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.success {
+    color: #15803d;
+}
+
+.failed {
+    color: #dc2626;
+}
+
+.summary {
+    margin-top: 24px;
+    padding: 18px;
+    background: #eff6ff;
+    border-radius: 10px;
+    overflow-wrap: anywhere;
+}
+
+.summary h2 {
+    font-size: 19px;
+    color: #1d4ed8;
+}
+
+.summary p {
+    line-height: 1.5;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #64748b;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px auto;
+        padding: 12px;
+    }
+
+    .form-card {
+        padding: 22px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+}

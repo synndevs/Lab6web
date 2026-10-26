@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Workshop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <div class="form-card">
+            <header class="header">
+                <p class="label">WORKSHOP REGISTRATION</p>
+                <h1>Pendaftaran Workshop</h1>
+                <p>Isi formulir di bawah untuk mendaftar workshop.</p>
+            </header>
+
+            <form id="formWorkshop" novalidate>
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" maxlength="50">
+                    <small id="hitungKarakter">0/50 karakter</small>
+                    <small class="error" id="errorNama"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" name="email" placeholder="contoh@email.com">
+                    <small class="error" id="errorEmail"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="sesi">Pilih Sesi Workshop</label>
+                    <select id="sesi" name="sesi">
+                        <option value="">-- Pilih sesi --</option>
+                        <option value="HTML & CSS Dasar">HTML & CSS Dasar</option>
+                        <option value="JavaScript Pemula">JavaScript Pemula</option>
+                        <option value="UI/UX Design">UI/UX Design</option>
+                    </select>
+                    <small class="error" id="errorSesi"></small>
+                </div>
+
+                <button type="submit" class="btn-submit">Daftar Workshop</button>
+                <button type="reset" class="btn-reset">Reset Form</button>
+
+                <p id="pesan" role="status" aria-live="polite"></p>
+            </form>
+
+            <section id="ringkasan" class="summary" hidden>
+                <h2>Pendaftaran Berhasil</h2>
+                <p>Nama: <span id="ringkasanNama"></span></p>
+                <p>Email: <span id="ringkasanEmail"></span></p>
+                <p>Sesi: <span id="ringkasanSesi"></span></p>
+            </section>
+        </div>
+        <footer>Form Pendaftaran Workshop &copy; 2026</footer>
+    </main>
+</body>
+</html>
